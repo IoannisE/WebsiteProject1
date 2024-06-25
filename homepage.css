@@ -1,0 +1,77 @@
+* {
+    font-family: ""Poppins", sans-serif;"
+}
+body {
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden; /* Fixes overflow caused by floating elements */
+}
+
+.navbar ul {
+    list-style-type: none;
+    background-color: rgb(255, 72, 0);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+    height: 50px; /* Set a fixed height */
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+    text-align: center;
+}
+
+.navbar a:hover {
+    background-color: rgb(255, 115, 0);
+}
+
+.title span{
+    font-size: 30px;
+    color: white;
+}
+
+.navbar li {
+    float: left;
+}
+
+.content {
+    background: url("C:/Users/ioann/OneDrive/Desktop/WEBSITE PROJECT 1/wp4317974.jpg") no-repeat center center fixed;
+    background-size: cover;
+    margin-top: 50px; /* Same as the navbar height */
+}
+
+main {
+    margin: 20px;
+    color: white;
+}
+
+h1 {
+    text-align: center;
+}
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Make the container fill the height of the viewport */
+}
+
+.content {
+    flex-grow: 1; /* Allows the content area to take up all available space */
+    width: 100%; /* Or whatever width you prefer */
+    margin: 0 auto; /* Center the content horizontally */
+}
+@media (max-width: 768px) {
+    .flex-container {
+        flex-direction: column;
+    }
+
+    .content {
+        width: 100%; /* Full width on smaller devices */
+        padding: 10px;
+    }
+}

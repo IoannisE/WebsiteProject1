@@ -1,0 +1,147 @@
+/* Importing fonts and setting basic resets and defaults */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+/* Styling for the body to setup Flexbox centering and background */
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Adjusted to start to avoid stretching the navbar */
+    align-items: center;
+    min-height: 100vh;
+    background: url("C:/Users/ioann/OneDrive/Desktop/WEBSITE PROJECT 1/wp5234314.png") no-repeat center center fixed;
+    background-size: cover;
+}
+
+/* Navbar styling */
+.navbar {
+    width: 100%;
+    background-color: rgb(0, 183, 255);
+}
+
+.navbar ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 50px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: block;
+    text-align: center;
+}
+
+.navbar a:hover {
+    background-color: rgb(0, 204, 255);
+}
+
+/* Wrapper styling for the login form */
+.wrapper {
+    width: 420px;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(20px);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    padding: 30px 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    color: white;
+    margin-top: 250px; /* Provides space between navbar and form */
+}
+
+/* Input styling */
+.input-box {
+    position: relative;
+    width: 100%;
+    margin: 30px 0;
+}
+
+.input-box input {
+    width: 100%;
+    padding: 10px 20px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    border-radius: 40px;
+    font-size: 16px;
+    color:  rgb(0, 204, 255);
+}
+
+.input-box i {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: rgb(0, 204, 255);
+    font-size: 20px;
+}
+
+/* Button and links styling */
+.btn {
+    width: 100%;
+    padding: 10px;
+    background: white;
+    color: #333;
+    border: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.remember-forgot {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+}
+
+.remember-forgot label input {
+    accent-color: white;
+    margin-right: 5px;
+}
+
+.remember-forgot a {
+    color: white;
+    text-decoration: none;
+}
+
+.remember-forgot a:hover {
+    text-decoration: underline;
+}
+
+.register-link p a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.register-link p a:hover {
+    text-decoration: underline;
+}
+
+/* Media queries for responsive adjustments */
+@media (max-width: 768px) {
+    .wrapper {
+        width: 90%;
+        padding: 20px 30px;
+    }
+
+    .navbar a {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .wrapper {
+        width: 100%;
+        padding: 15px 20px;
+    }
+}
